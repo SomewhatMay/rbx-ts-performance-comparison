@@ -7,7 +7,9 @@ After several simulations, it has been concluded that the roblox-ts workflow has
 #
 
 Typescript benchmarks:
+
 ![Typescript benchmark image](assets/ts-performance.png)
+
 Results:
 * Simulation was repeated 20 times
 * Each iteration ran the main loop 10,000 times
@@ -16,7 +18,9 @@ Results:
 
 #
 Luau benchmarks:
+
 ![Luau benchmark image](assets/luau-performance.png)
+
 Results:
 * Simulation was repeated 20 times
 * Each iteration ran the main loop 10,000 times
