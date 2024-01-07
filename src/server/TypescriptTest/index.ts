@@ -1,12 +1,10 @@
 import MainClass from "./MainClass";
 import rand from "./rand";
 
-export default function() {
+export default function(testCount: number, simulationCount: number) {
     print("Starting benchmark....")
 
     const totalStart = tick();
-    const testCount = 20;
-    const simulationCount = 5_000;
 
     const benchmarkTable: number[] = [];
 

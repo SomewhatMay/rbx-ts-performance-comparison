@@ -1,12 +1,10 @@
-return function()
+local MainClass = require(script.MainClass)
+local rand = require(script.rand)
+
+return function(testCount: number, simulationCount: number)
 	print("Starting benchmark...")
 
 	local totalStart = tick()
-	local testCount = 20
-	local simulationCount = 5_000
-
-	local MainClass = require(script.MainClass)
-	local rand = require(script.rand)
 
 	local benchmarkTable = {}
 
