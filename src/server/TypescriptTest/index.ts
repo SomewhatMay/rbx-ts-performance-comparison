@@ -18,11 +18,11 @@ export default function(testCount: number, simulationCount: number) {
         const isPrimeContainer: boolean[] = [];
         const testContainer: MainClass[] = [];
 
-        for (let i = 0; i < simulationCount; i++) {
+        for (let i of $range(0, simulationCount-1)) {
             const tester = new MainClass(rand.NextInteger(1, i), rand.NextInteger(1, i));
             let isPrime: boolean = tester.isPrime();
             
-            for (let j= 0; j < 100; j++) {
+            for (let j of $range(1, 100)) {
                 const choice = rand.NextInteger(1, 6);
 
                 if (choice === 1) {
@@ -44,7 +44,7 @@ export default function(testCount: number, simulationCount: number) {
     }
 
     const runTest = () => {
-        for (let i = 0; i < testCount; i++) {
+        for (let i of $range(1, testCount)) {
             runSimulation();
 
             print(`Complete: ${math.floor(i / testCount * 100)}%`);
